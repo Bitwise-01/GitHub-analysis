@@ -73,7 +73,7 @@ function graph(data) {
     myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+            labels: ['Sundays', 'Mondays', 'Tuesdays', 'Wednesdays', 'Thursdays', 'Fridays', 'Saturdays'],
             datasets: [
                 {
                     label: 'Contributions',
