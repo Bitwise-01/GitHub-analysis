@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Github Contributions</title>
+        <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/Chart.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/graph.js') }}" defer></script>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+    </head>
+    <body>
+        <div id="container">
+            <h1 class="centered" id="header">Git<span span style="color: #777">Hub</span></h1>
+            <div id="input">
+                <input type="text" id="username-input" placeholder="Pure-L0G1C" spellcheck="false" />
+                <button class="hover" type="button" onclick="fetchInfo()">Analyze</button>
+            </div>
+
+            <div id="info">
+                <span>Name: <span id="name"></span></span><br />
+                <span>Username: <span id="username"></span> </span><br /><br />
+
+                <span>Followers: <span id="followers"></span> </span><br />
+                <span>Following: <span id="following"></span> </span><br /><br />
+
+                <span>Stars: <span id="stars"></span></span><br />
+                <span>Repositories: <span id="repos"></span></span><br />
+                <span>Contributions: <span id="contribs"></span></span><br />
+            </div>
+        </div>
+
+        <div id="graph-cont">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </body>
+</html>

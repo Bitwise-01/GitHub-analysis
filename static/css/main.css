@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: fira;
+    src: url(../font/fira.ttf);
+}
+
+body {
+    font-family: fira;
+    background-color: #222;
+}
+
+.centered {
+    display: table;
+    margin: 0 auto;
+}
+
+#container {
+    margin: auto;
+    width: 100%;
+}
+
+#header {
+    color: #fff;
+    padding: 1.5%;
+    border-bottom: 1px solid #fff;
+}
+
+#username-input {
+    width: 20%;
+    height: 40px;
+    outline: none;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 2px;
+    padding-left: 10px;
+    border: 1px solid #fff;
+}
+
+button {
+    outline: none;
+    border: none;
+    height: 44px;
+    color: #fff;
+    font-size: 25px;
+    padding: 1px 15px;
+    background: #222;
+    border-radius: 2px;
+    transition-delay: 80ms;
+    border: 1px solid #fff;
+    -webkit-transition-delay: 80ms;
+}
+
+button:active {
+    border-color: transparent;
+}
+
+.hover:hover {
+    cursor: pointer;
+    background: #2f2f2f;
+}
+
+#input {
+    margin-top: 2%;
+    text-align: center;
+}
+
+input::selection {
+    color: #fff;
+    background-color: #444;
+}
+
+#info {
+    color: #fff;
+    display: none;
+    margin-top: 5%;
+    margin-left: 37%;
+    position: absolute;
+}
+
+#graph-cont {
+    height: 480px;
+    width: 482px;
+    margin: 2% 1%;
+}
+
+@media (max-width: 1024px) {
+    #header {
+        display: block;
+        margin: 2px auto;
+        text-align: center;
+    }
+
+    #username-input {
+        width: 40%;
+        height: 35px;
+        display: block;
+        margin: 10px auto;
+        border-radius: 2px;
+    }
+
+    #info {
+        width: 98%;
+        margin-left: 1%;
+        font-size: 14px;
+        padding-bottom: 2%;
+        border-bottom: 1px solid rgba(255, 255, 2555, 0.5);
+    }
+
+    #graph-cont {
+        height: 380px;
+        width: 95%;
+        margin: 1%;
+        margin-top: 60%;
+        padding-bottom: 2%;
+    }
+}
